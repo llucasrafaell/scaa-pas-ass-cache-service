@@ -1,8 +1,13 @@
 package com.arquiteturaSoftware.ass_cache_service.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.io.Serializable;
 
+@Entity
 public class AssinaturaCacheModel implements Serializable {
+    @Id
     private Long assinaturaId;
     private String clienteNome;
     private String aplicativoNome;
